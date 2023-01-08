@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Rock, Flag, and Eagle</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://www.dafontfree.net/embed/dGV4dGlsZS1yZWd1bGFyJmRhdGEvMjgvdC8xNDUyOTgvVGV4dGlsZS50dGY" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-	<script src="index.js"></script>
+    <audio id="rockflageagle" src="assets/sounds/RockFlagEagle.mp3"></audio>
+    <audio id="theme" src="assets/sounds/It's Always Sunny in Philadelphia - Theme Song.mp3"></audio>
+	<script src="index.js" defer></script>
     <main> 
-        <h1>Rock Paper Scissors</h1>
-        <form action="" method="post">
-            <label for="player1">Player 1</label>
-            <select name="player1" id="player1">
-                <option value="rock">Rock</option>
-                <option value="paper">Paper</option>
-                <option value="scissors">Scissors</option>
-            </select>
-            <label for="player2">Player 2</label>
-            <select name="player2" id="player2">
-                <option value="rock">Rock</option>
-                <option value="paper">Paper</option>
-                <option value="scissors">Scissors</option>
-            </select>
-            <input type="submit" value="Play">
-        </form>
+      <div id="introcontainer">
+        <h1 id="title"> Rock, Flag, and Eagle</h1>
+        <button id="start">Begin Game</button>
+      </div>
+      <div id="gamecontainer">
+        <h1 id="title"> Rock, Flag, and Eagle</h1>
+        <h3 id="description">Freedom Has It's Price...</h3>
+        <!-- <h3 class="description">And Now The McPoyles Have Come To Stab Charlie...</h3>
+        <h3 class="description">Can You Save Charlie And Go America All Over Everybody's Ass?</h3> -->
+        <h2 id="instructions">Choose Your Weapon!</h2>
+      
+        <img class="weapon-icon btn" id="rock" src="assets/icons/noun-rock-1967998.svg" width="200" height="200"> </img>
+        <img class="weapon-icon btn" id="flag" src="assets/icons/noun-usa-flag-5309133.svg" width="200" height="200"> </img>
+        <img class="weapon-icon btn" id="eagle" src="assets/icons/noun-eagle-704261.svg" width="200" height="200"> </img>
+      </div>
+        <div></div>
+
     </main>
   </body>
 </html>
