@@ -1,5 +1,75 @@
+@font-face {
+    font-family: textile;
+    src: url(assets/fonts/textile.ttf);
+}
+
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: textile;
+}
+
 h1{
-font-size: 88px;
+font-size: 65px;
 margin-bottom: 0px;
-text-align: center;
+font-weight: 500;
+}
+
+h2{
+font-size: 36px;
+margin-bottom: 0px;
+font-weight: 500;
+}
+
+h3{
+font-size: 26px;
+margin-bottom: 0px;
+font-weight: 500;
+}
+
+.weapon-icon{
+    border-style: solid;
+    border-color: white;
+    padding: 20px;
+    margin: 25px;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+#gamecontainer{
+    display: none;
+}
+
+#introcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#start{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#description{
+    /* display: none; */
+}
+
+#instructions{
+    display: none;
+}
+
+.weapon-icon{
+    display: none;
 }
