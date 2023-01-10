@@ -89,8 +89,8 @@ font-weight: 500;
 
 #eagle_title_game, #eagle_title_hidden{
     color: blue;
-    transition: 2s;
-    transition-delay: 1.5s;
+    transition: 22s;
+    transition-delay: 1.3s;
 }
 
 .hidden{
