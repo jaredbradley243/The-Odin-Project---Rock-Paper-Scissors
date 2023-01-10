@@ -79,7 +79,6 @@ function playTheme(){
   }
 
 function playAudio(){
-    console.log("playAudio");
     const audio = document.getElementById("rockflageagle");
     if(!audio) return;
     audio.play();
@@ -98,16 +97,27 @@ function hideIntro(){
     introcontainer.style.display = "none";
 }
 
+function changeColors(){
+  const titleSpan1 = document.getElementById("rock_title_hidden");
+  const titleSpan2 = document.getElementById("eagle_title_hidden");
+  titleSpan1.classList.add("animate");
+  titleSpan2.classList.add("animate");
+}
+
 const rock = document.getElementById("rock");
 const flag = document.getElementById("flag");
 const eagle = document.getElementById("eagle");
+const introcontainer = document.getElementById("introcontainer");
 
-// rock.addEventListener("click", playAudio);
-// flag.addEventListener("click", playAudio);
-// eagle.addEventListener("click", playAudio);
 start = document.getElementById("start");
-start.addEventListener("click", displayGame);
-start.addEventListener("click", playTheme, {once: true});
+
+start.addEventListener("click", playAudio, {once: true});
+start.addEventListener("click", changeColors, {once: true});
+
+const titleSpan2 = document.getElementById("eagle_title_hidden");
+titleSpan2.addEventListener("transitionend", displayGame)
+
+titleSpan2.addEventListener("transitionend", playTheme, {once: true});
 
 if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );

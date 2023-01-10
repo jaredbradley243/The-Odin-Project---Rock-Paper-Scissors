@@ -67,9 +67,35 @@ font-weight: 500;
 }
 
 #instructions{
-    display: none;
+    /* display: none; */
 }
 
 .weapon-icon{
-    display: none;
+    /* display: none; */
+}
+
+#rock_title_game, #rock_title_hidden{
+    color: red;
+}
+
+#flag_title_game, #flag_title_hidden{
+    color: white;
+}
+
+#eagle_title_game, #eagle_title_hidden{
+    color: blue;
+    transition: 2.6s;
+    transition-delay: 1.5s;
+}
+
+.hidden{
+    position: absolute;
+    overflow: hidden;
+    width: 0%;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.animate{
+    width: 12.3%
 }
