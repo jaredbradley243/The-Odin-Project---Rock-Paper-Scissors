@@ -115,9 +115,9 @@ start.addEventListener("click", playAudio, {once: true});
 start.addEventListener("click", changeColors, {once: true});
 
 const titleSpan2 = document.getElementById("eagle_title_hidden");
-titleSpan2.addEventListener("transitionend", displayGame)
+//titleSpan2.addEventListener("transitionend", displayGame)
 
-titleSpan2.addEventListener("transitionend", playTheme, {once: true});
+//titleSpan2.addEventListener("transitionend", playTheme, {once: true});
 
 if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
