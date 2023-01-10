@@ -72,10 +72,16 @@ font-weight: 500;
     color: black;
     border: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     margin-top: 20px;
     cursor: pointer;
+    font-family: textile;
+    font-weight: 400;
+    border-style: solid;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
 }
 
 #description{
