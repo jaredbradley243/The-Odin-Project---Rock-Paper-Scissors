@@ -72,11 +72,6 @@
 
 
 // alert(game())
-function playTheme(){
-    const theme = document.getElementById("theme");
-    if(!theme) return;
-    theme.play();
-  }
 
 function playAudio(){
     const audio = document.getElementById("rockflageagle");
@@ -84,11 +79,32 @@ function playAudio(){
     audio.play();
   }
 
-function displayGame(){
+  function changeColors(){
+    const titleSpan1 = document.getElementById("rock_title");
+    const titleSpan2 = document.getElementById("eagle_title");
+    titleSpan1.style.color = "red";
+    titleSpan2.style.color = "blue";
+  }
+
+  function displayTitleCard(){
+    const titlecard = document.getElementById("titlecontainer")
+    if(!titlecontainer) return;
+    titlecard.style.display = "flex";
+    hideIntro();
+  }
+  
+  function playTheme(){
+      const theme = document.getElementById("theme");
+      if(!theme) return;
+      theme.play();
+    }
+
+  function displayGame(){
     const gamecontainer = document.getElementById("gamecontainer");
     if(!gamecontainer) return;
     gamecontainer.style.display = "block";
     hideIntro();
+    hideTitleCard();
 }
 
 function hideIntro(){
@@ -97,16 +113,12 @@ function hideIntro(){
     introcontainer.style.display = "none";
 }
 
-function changeColors(){
-  const titleSpan1 = document.getElementById("rock_title_hidden");
-  const titleSpan2 = document.getElementById("eagle_title_hidden");
-  titleSpan1.classList.add("animate");
-  titleSpan2.classList.add("animate");
+function hideTitleCard(){
+  const titlecard = document.getElementById("titlecontainer");
+  if(!titlecontainer) return;
+  titlecard.style.display = "none";
 }
 
-const rock = document.getElementById("rock");
-const flag = document.getElementById("flag");
-const eagle = document.getElementById("eagle");
 const introcontainer = document.getElementById("introcontainer");
 
 start = document.getElementById("start");
@@ -114,10 +126,12 @@ start = document.getElementById("start");
 start.addEventListener("click", playAudio, {once: true});
 start.addEventListener("click", changeColors, {once: true});
 
-const titleSpan2 = document.getElementById("eagle_title_hidden");
-titleSpan2.addEventListener("transitionend", displayGame)
-
+const titleSpan2 = document.getElementById("eagle_title");
+titleSpan2.addEventListener("transitionend", displayTitleCard);
 titleSpan2.addEventListener("transitionend", playTheme, {once: true});
+
+const theme = document.getElementById("theme");
+theme.addEventListener("ended", displayGame);
 
 if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
