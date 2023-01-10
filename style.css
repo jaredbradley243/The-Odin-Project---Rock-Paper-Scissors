@@ -90,6 +90,7 @@ font-weight: 500;
 
 .hidden{
     position: absolute;
+    display: inline-flex;
     overflow: hidden;
     width: 0%;
     transition: 0.5s;
@@ -97,5 +98,5 @@ font-weight: 500;
 }
 
 .animate{
-    width: 12.3%
+    width: 100%
 }
