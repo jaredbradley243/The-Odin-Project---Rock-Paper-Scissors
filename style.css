@@ -8,6 +8,7 @@ body{
     color: white;
     text-align: center;
     font-family: textile;
+    margin: 0px;
 }
 
 h1{
@@ -39,12 +40,27 @@ font-weight: 500;
     cursor: pointer;
 }
 
+#intro_title{
+    position: relative;
+}
+
 #gamecontainer{
     display: none;
+    height: 100vh;
 }
 
 #introcontainer{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#titlecontainer{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -74,34 +90,40 @@ font-weight: 500;
     /* display: none; */
 }
 
-#introcontainer{
-    position: relative;
-    overflow: hidden;
-}
-
-#rock_title_game, #rock_title_hidden{
+#rock_title_game{
     color: red;
 }
 
-#flag_title_game, #flag_title_hidden{
+#flag_title_game{
     color: white;
 }
 
-#eagle_title_game, #eagle_title_hidden{
+#eagle_title_game{
     color: blue;
-    transition: 22s;
-    transition-delay: 1.3s;
 }
 
-.hidden{
-    position: absolute;
-    display: inline-flex;
-    overflow: hidden;
-    width: 0%;
-    transition: 1.5s;
-    transition-timing-function: ease-in;
+#rock_title{
+    transition: 1s;
+}
+
+#eagle_title{
+    transition: 3.1s;
+    transition-delay: 1.2s;
+}
+
+/* #introcontainer {
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-delay: 1s;
+    animation-play-state: running;
+}
+@keyframes example {
+    0% {top:0px;}
+    100% {top:-700px;} */
 }
 
 .animate{
-    width: 100%
+
 }
