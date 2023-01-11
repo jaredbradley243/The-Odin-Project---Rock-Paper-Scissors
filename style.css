@@ -29,15 +29,74 @@ margin-bottom: 0px;
 font-weight: 500;
 }
 
-.weapon-icon{
-    border-style: solid;
-    border-color: white;
-    padding: 20px;
-    margin: 25px;
+#game{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0px auto;
 }
 
 .btn{
     cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+
+.weapon-btn{
+    margin: 0px 50px;
+    background-color: transparent;
+    border: none;
+}
+
+#weaponBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 20px 0px;
+    background-color: #00000078;
+}
+
+#game-results{
+    display: flex; 
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #00000078;  
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.score-container{
+    display: flex;
+    margin: auto auto;
+}
+
+.score{
+    margin: 0px 50px;
+}
+
+.score-number{
+    font-size: 25px;
+}
+
+.game-message{
+    margin-top: 166px;
+    font-size: 22px;
+}
+
+#computer-play{
+    border-right: solid white;
+    padding: 15px;
+}
+
+#player-play{
+    border-left: solid white;
+    padding: 15px;
 }
 
 #intro_title{
@@ -47,6 +106,17 @@ font-weight: 500;
 #gamecontainer{
     display: none;
     height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(assets/images/sunny7.jpg);
+    /* background-image: radial-gradient(#ffd656,#ffb300), url(assets/images/sunny7.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #introcontainer{
@@ -57,6 +127,10 @@ font-weight: 500;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-image: url(assets/images/sunny5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #titlecontainer{
@@ -68,7 +142,7 @@ font-weight: 500;
 }
 
 #start{
-    background-color: white;
+    background-color: #f8c016c5;
     color: black;
     border: none;
     padding: 10px;
@@ -89,11 +163,11 @@ font-weight: 500;
 }
 
 #instructions{
-    /* display: none; */
+    margin-bottom: 60px;
 }
 
-.weapon-icon{
-    /* display: none; */
+.subheading{
+    margin-bottom: 60px;
 }
 
 #rock_title_game{

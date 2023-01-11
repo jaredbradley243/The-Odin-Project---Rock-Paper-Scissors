@@ -19,7 +19,7 @@
           <span id="flag_title">Flag,</span> and 
           <span id="eagle_title">Eagle</span>
         </h1>
-        <button id="start">Begin Game</button>
+        <button id="start" class="btn">Begin Game</button>
       </div>
       <div id="titlecontainer">
         <h1 id="title_card">
@@ -27,21 +27,38 @@
         </h1>
       </div>
       <div id="gamecontainer">
-        <h1 id="game_title">
-          <span id="rock_title_game">Rock,</span>
-          <span id="flag_title_game">Flag,</span> and 
-          <span id="eagle_title_game">Eagle</span>
-        </h1>
-        <h3 id="description">Freedom Has Its Price...</h3>
-        <!-- <h3 class="description">And Now The McPoyles Have Come To Stab Charlie...</h3>
-        <h3 class="description">Can You Save Charlie And Go America All Over Everybody's Ass?</h3> -->
-        <h2 id="instructions">Choose Your Weapon!</h2>
-      
-        <img class="weapon-icon btn" id="rock" src="assets/icons/noun-rock-1967998.svg" width="200" height="200"> </img>
-        <img class="weapon-icon btn" id="flag" src="assets/icons/noun-usa-flag-5309133.svg" width="200" height="200"> </img>
-        <img class="weapon-icon btn" id="eagle" src="assets/icons/noun-eagle-704261.svg" width="200" height="200"> </img>
+        <h1 id="description">Freedom Has Its Price...</h1>
+        <h2 class="subheading">Can You Save Charlie And Go America All Over Everybody's Ass?</h2>
+        <div id="game">
+          <div class="game-output">
+              <div id="game-results">
+                <div id="computer-play">
+                  <p class="mcpoyle-weapon">McPoyle's Weapon</p>
+                  <img id="mcpoyle-weapon-image" src="assets/icons/default-weapon.svg" alt="" width="50" height="50"></img>
+                </div>
+                <div class="score-container">
+					<div class="score"><p class="mcpoyle">McPoyle</p><p class="score-number">0</p></div>
+					<div class="score"><p class="player">Player</p><p class="score-number">0</p></div>
+                </div>
+				<div id="player-play">
+					<p class="player-weapon">Player's Weapon</p>
+					<img src="assets/icons/default-weapon.svg" alt="" width="50" height="50"></img>
+				  </div>
+              </div>
+            <div class="message-display"><p class="game-message">Choose Your Weapon!</p></div>
+          </div>
+          <div id="weaponBox">
+            <button class="btn weapon-btn">
+              <img class="weapon-icon" id="rock" src="assets/icons/noun-rock-1967998.svg" width="100" height="100"> </img>
+            <button class="btn weapon-btn">
+              <img class="weapon-icon" id="flag" src="assets/icons/noun-usa-flag-5309133.svg" width="135" height="135"> </img>
+            </button>
+            <button class="btn weapon-btn">
+              <img class="weapon-icon" id="eagle" src="assets/icons/noun-eagle-704261.svg" width="100" height="100"> </img>
+            </button>
+          </div>
+        </div>
       </div>
-        <div></div>
 
     </main>
   </body>
