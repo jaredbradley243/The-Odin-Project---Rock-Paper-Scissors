@@ -90,13 +90,15 @@ font-weight: 500;
 }
 
 #computer-play{
-    border-right: solid white;
+    border-left: solid white;
     padding: 15px;
+    width: 25%;
 }
 
 #player-play{
-    border-left: solid white;
+    border-right: solid white;
     padding: 15px;
+    width: 25%;
 }
 
 #intro_title{
@@ -104,7 +106,8 @@ font-weight: 500;
 }
 
 #gamecontainer{
-    display: none;
+    display: flex;
+    /* display: none; */
     height: 100vh;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +123,8 @@ font-weight: 500;
 }
 
 #introcontainer{
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
