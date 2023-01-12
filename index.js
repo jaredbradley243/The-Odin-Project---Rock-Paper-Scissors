@@ -57,6 +57,12 @@ function updateScoreCount(roundWinner){
 	}
 }
 
+function resetWeaponIcons(){
+	document.getElementById("mcpoyle-weapon-image").src = "assets/icons/default-weapon.svg";
+	document.getElementById("player-weapon-image").src = "assets/icons/default-weapon.svg";
+}
+
+
 function playRound(playerSelection, computerSelection) {
         if (playerSelection === "rock" && computerSelection === "eagle"){
             // return "Player Wins! Rock Beats Scissors!";
@@ -90,9 +96,16 @@ function playRound(playerSelection, computerSelection) {
 
 function endGame(){
 	resetScore();
-	disableButtons();
-	promptNewGame();
+	// displayNewGameOverlay();
+	// promptNewGame();
 }
+
+// function newGame(){
+// 	resetWeaponIcons();
+// 	updatePlayerScore();
+// 	updateComputerScore();
+// 	playGame();
+// }
 
 function playGame(event){
         let computerSelection = getComputerChoice();
@@ -171,8 +184,8 @@ start.addEventListener("click", playAudio, {once: true});
 start.addEventListener("click", changeColors, {once: true});
 
 const titleSpan2 = document.getElementById("eagle_title");
-// titleSpan2.addEventListener("transitionend", displayTitleCard);
-// titleSpan2.addEventListener("transitionend", playTheme, {once: true});
+titleSpan2.addEventListener("transitionend", displayTitleCard);
+titleSpan2.addEventListener("transitionend", playTheme, {once: true});
 
 const theme = document.getElementById("theme");
 theme.addEventListener("ended", displayGame);

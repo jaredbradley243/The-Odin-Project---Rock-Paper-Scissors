@@ -106,8 +106,7 @@ font-weight: 500;
 }
 
 #gamecontainer{
-    display: flex;
-    /* display: none; */
+    display: none;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
@@ -116,15 +115,13 @@ font-weight: 500;
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(assets/images/sunny7.jpg);
-    /* background-image: radial-gradient(#ffd656,#ffb300), url(assets/images/sunny7.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #introcontainer{
-    display: none;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -162,10 +159,6 @@ font-weight: 500;
     height: auto;
 }
 
-#description{
-    /* display: none; */
-}
-
 #instructions{
     margin-bottom: 60px;
 }
@@ -193,21 +186,4 @@ font-weight: 500;
 #eagle_title{
     transition: 3.1s;
     transition-delay: 1.2s;
-}
-
-/* #introcontainer {
-    position: relative;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-direction: normal;
-    animation-delay: 1s;
-    animation-play-state: running;
-}
-@keyframes example {
-    0% {top:0px;}
-    100% {top:-700px;} */
-}
-
-.animate{
-
 }
