@@ -18,7 +18,7 @@ To build a web version of the classic game "Rock Paper Scissors" as a means to p
 
 * JavaScript ![icons8-javascript](https://user-images.githubusercontent.com/107898107/211131252-7d1364bd-b6c2-4e77-876c-d3c7b4ecf126.svg)
 * HTML  ![icons8-html-5-20](https://user-images.githubusercontent.com/107898107/211131200-886e1ba5-3979-4083-a037-b9bffdbedc2d.svg)
-* CSS ![icons8-css3](https://user-images.githubusercontent.com/107898107/211131340-f2d93c1f-30d0-4d7c-bd9d-78bf6dc99c95.svg) Flexbox
+* CSS ![icons8-css3](https://user-images.githubusercontent.com/107898107/211131340-f2d93c1f-30d0-4d7c-bd9d-78bf6dc99c95.svg)
 
 ### Tools:
 * Git ![icons8-git](https://user-images.githubusercontent.com/107898107/211131596-fdb65679-35fb-4d60-8ca2-5ec536487391.svg)
