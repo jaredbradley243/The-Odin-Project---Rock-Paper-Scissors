@@ -48,11 +48,11 @@ I created a Rock Paper Scissors game with a custom GUI and a fun pop culture the
 
 2. How to use event listeners to show and hide containers based on user behavior (e.g. click)
 
-3. Further practice using event handlers and event listeners
+3. Further practice using event handlers and event listeners after using them for the first time during the [JavaScript Drum Kit Project](https://github.com/jaredbradley243/JavaScript30-Vanilla-JS-Drum-Kit).
 
 ### Customizations
 * Every aspect of this project was custom, from the game theme to the GUI design.
 
 ### What could be improved
-- [ ] The layout of the game could improve significantly. Currently, it is not responsive and works only on desktop. Since completing this project I have learned how to properly utilize CSS Flexbox, and would like to redesign the layout to support additional devices.
+- [ ] The layout of the game could improve significantly. Currently, it is not responsive and works only on desktop. Since completing this project I have learned how to [properly utilize CSS Flexbox](https://github.com/jaredbradley243/Flexbox-Crash-Course), and would like to redesign the layout to support additional devices.
 - [ ] The game continues indefinitely with the score resetting after 5 rounds. For an improved user experience, a hard 5-round limit could be implemented, after which the user would be prompted to play again.
